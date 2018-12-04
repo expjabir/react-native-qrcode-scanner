@@ -139,7 +139,7 @@ export default class QRCodeScanner extends Component {
   componentDidMount() {
     if (this.props.fadeIn) {
       Animated.sequence([
-        Animated.delay(1000),
+        Animated.delay(1),
         Animated.timing(this.state.fadeInOpacity, {
           toValue: 1,
           easing: Easing.inOut(Easing.quad),
